@@ -1,0 +1,27 @@
+<h1>New Task</h1>
+<br>
+<%= form_for(@task) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <%= f.submit %>
+  <% end %>
+  
+
+
+
+
+
+
+<%# <form class="new_restaurant" id="new_restaurant" action="/restaurants" accept-charset="UTF-8" method="post">
+  <input type="hidden" name="authenticity_token" value="fUrBymmVzFG49YTQE9xKfohttEtW7eHnui2WT6KWpRXT6g9dz73lhZ7bRdHH+RuV/TFoB23OG5l1eo731o8l6g==">
+  
+  <label for="task_title">Title</label>
+  <input type="text" name="task[title]" id="task_title">
+ 
+  <label for="task_details">Details</label>
+  <input type="text" name="task[details]" id="task_details">
+ 
+  <input type="submit" name="commit" value="Create Task" data-disable-with="Create Task">
+</form> %>
